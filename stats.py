@@ -17,7 +17,6 @@ def sort_chars_sort(count):
 def sort_chars(char_dict):
     sorted_chars = []
     for char in char_dict:
-        temp = {"char": char, "num": char_dict[char]}
-        sorted_chars.append(temp)
+        sorted_chars.append({"char": char, "num": char_dict[char]})
     sorted_chars.sort(reverse=True, key=sort_chars_sort)
     return sorted_chars
